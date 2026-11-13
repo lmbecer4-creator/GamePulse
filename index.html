@@ -7,54 +7,126 @@
     <title>GamePulse | Gaming News</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-        <h1>GamePulse</h1>
-        <p>Your Daily Gaming News Source</p>
+        <div class="header-content">
+            <h1>Game<span>Pulse</span></h1>
+            <p>Your Daily Gaming News Source</p>
+        </div>
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="#">News</a>
-        <a href="#">Reviews</a>
-        <a href="#">Esports</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#esports">Esports</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <main>
-        <section>
-            <h2>Welcome to GamePulse</h2>
-            <p>
-                Stay up to date with the latest gaming news,
-                announcements, reviews, and esports updates.
-                GamePulse brings gamers the stories that matter.
-            </p>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="category">THE GAMING WORLD</p>
+                <h2>Stay Ahead of the Game</h2>
+                <p>
+                    Your destination for gaming news, new releases,
+                    reviews, and everything happening in esports.
+                </p>
+                <a href="#news" class="button">Explore Gaming News</a>
+            </div>
         </section>
 
-        <section>
-            <h2>Latest Gaming News</h2>
+        <!-- Latest Gaming News -->
+        <section class="news-section" id="news">
+            <div class="section-heading">
+                <h2>Latest Gaming News</h2>
+                <p>Catch up on what's happening in gaming.</p>
+            </div>
 
-            <article>
-                <h3>What's New in Gaming?</h3>
-                <p>
-                    Discover the latest game releases, updates,
-                    and announcements from your favorite developers.
-                </p>
-            </article>
+            <div class="news-grid">
 
-            <article>
-                <h3>Gaming Community</h3>
-                <p>
-                    Follow competitive gaming, esports tournaments,
-                    and exciting community events.
-                </p>
-            </article>
+                <!-- New Releases -->
+                <article class="news-card">
+                    <div class="card-image image-one">
+                        <span class="card-label">NEW RELEASES</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>What's New in Gaming?</h3>
+                        <p>
+                            Discover upcoming games, major releases,
+                            and announcements from your favorite developers.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Reviews -->
+                <article class="news-card" id="reviews">
+                    <div class="card-image image-two">
+                        <span class="card-label">REVIEWS</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Games Worth Playing</h3>
+                        <p>
+                            Explore gaming reviews, gameplay experiences,
+                            and the latest titles making an impact.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Esports -->
+                <article class="news-card" id="esports">
+                    <div class="card-image image-three">
+                        <span class="card-label">ESPORTS</span>
+                    </div>
+
+                    <div class="card-content">
+                        <h3>Inside the Competition</h3>
+                        <p>
+                            Follow esports tournaments, competitive
+                            gaming, and exciting community events.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
         </section>
+
+        <!-- Gaming Community -->
+        <section class="trending-section">
+            <div>
+                <p class="category">GAMING COMMUNITY</p>
+                <h2>More Than Just Games</h2>
+                <p>
+                    From major gaming announcements to player
+                    discussions and reviews, GamePulse brings
+                    gaming fans together.
+                </p>
+            </div>
+
+            <div class="trending-box">
+                <h3>What's Trending?</h3>
+                <ul>
+                    <li>Upcoming game releases</li>
+                    <li>Latest gaming updates</li>
+                    <li>Popular game reviews</li>
+                    <li>Competitive esports events</li>
+                </ul>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 GamePulse Gaming News</p>
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>GamePulse</h2>
+        <p>Your Daily Gaming News Source</p>
+        <p>&copy; 2026 GamePulse. All Rights Reserved.</p>
     </footer>
 
 </body>
