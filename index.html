@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GamePulse brings you the latest gaming news, game releases, reviews, and esports updates.">
+    <meta name="keywords" content="gaming, gaming news, video games, game reviews, esports">
+    <meta name="author" content="GamePulse">
     <title>GamePulse | Gaming News</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,119 +14,89 @@
 <body>
 
     <header>
-        <div class="header-content">
-            <h1>Game<span>Pulse</span></h1>
-            <p>Your Daily Gaming News Source</p>
-        </div>
+        <h1>Game<span>Pulse</span></h1>
+        <p>Your Daily Gaming News Source</p>
     </header>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#esports">Esports</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="index.html#esports">Esports</a>
+        <a href="index.html#contact">Contact</a>
     </nav>
 
     <main>
 
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="category">THE GAMING WORLD</p>
-                <h2>Stay Ahead of the Game</h2>
-                <p>
-                    Your destination for gaming news, new releases,
-                    reviews, and everything happening in esports.
-                </p>
-                <a href="#news" class="button">Explore Gaming News</a>
-            </div>
+        <section class="hero">
+            <p>THE GAMING WORLD</p>
+            <h2>Stay Ahead of the Game</h2>
+            <p>Your destination for gaming news, new releases, reviews, and everything happening in esports.</p>
+            <a href="news.html" class="button">Explore Gaming News</a>
         </section>
 
-        <!-- Latest Gaming News -->
-        <section class="news-section" id="news">
-            <div class="section-heading">
-                <h2>Latest Gaming News</h2>
-                <p>Catch up on what's happening in gaming.</p>
-            </div>
+        <section class="content-section">
+            <h2>Latest Gaming News</h2>
+            <p>Catch up on what's happening in gaming.</p>
 
-            <div class="news-grid">
+            <div class="card-container">
 
-                <!-- New Releases -->
-                <article class="news-card">
-                    <div class="card-image image-one">
-                        <span class="card-label">NEW RELEASES</span>
-                    </div>
-
+                <article class="card">
+                    <div class="card-image image-one"></div>
                     <div class="card-content">
+                        <span class="category">NEW RELEASES</span>
                         <h3>What's New in Gaming?</h3>
-                        <p>
-                            Discover upcoming games, major releases,
-                            and announcements from your favorite developers.
-                        </p>
+                        <p>Discover upcoming games, major releases, and announcements from your favorite developers.</p>
+                        <a href="news.html">Read More</a>
                     </div>
                 </article>
 
-                <!-- Reviews -->
-                <article class="news-card" id="reviews">
-                    <div class="card-image image-two">
-                        <span class="card-label">REVIEWS</span>
-                    </div>
-
+                <article class="card">
+                    <div class="card-image image-two"></div>
                     <div class="card-content">
+                        <span class="category">REVIEWS</span>
                         <h3>Games Worth Playing</h3>
-                        <p>
-                            Explore gaming reviews, gameplay experiences,
-                            and the latest titles making an impact.
-                        </p>
+                        <p>Explore gaming reviews, gameplay experiences, and the latest titles making an impact.</p>
+                        <a href="reviews.html">Read More</a>
                     </div>
                 </article>
 
-                <!-- Esports -->
-                <article class="news-card" id="esports">
-                    <div class="card-image image-three">
-                        <span class="card-label">ESPORTS</span>
-                    </div>
-
+                <article class="card">
+                    <div class="card-image image-three"></div>
                     <div class="card-content">
+                        <span class="category">ESPORTS</span>
                         <h3>Inside the Competition</h3>
-                        <p>
-                            Follow esports tournaments, competitive
-                            gaming, and exciting community events.
-                        </p>
+                        <p>Follow esports tournaments, competitive gaming, and exciting community events.</p>
+                        <a href="#esports">Learn More</a>
                     </div>
                 </article>
 
             </div>
         </section>
 
-        <!-- Gaming Community -->
-        <section class="trending-section">
-            <div>
-                <p class="category">GAMING COMMUNITY</p>
-                <h2>More Than Just Games</h2>
-                <p>
-                    From major gaming announcements to player
-                    discussions and reviews, GamePulse brings
-                    gaming fans together.
-                </p>
-            </div>
+        <section class="content-section" id="esports">
+            <p>GAMING COMMUNITY</p>
+            <h2>More Than Just Games</h2>
+            <p>From major gaming announcements to player discussions and reviews, GamePulse brings gaming fans together.</p>
 
-            <div class="trending-box">
-                <h3>What's Trending?</h3>
-                <ul>
-                    <li>Upcoming game releases</li>
-                    <li>Latest gaming updates</li>
-                    <li>Popular game reviews</li>
-                    <li>Competitive esports events</li>
-                </ul>
-            </div>
+            <h3>What's Trending?</h3>
+            <ul>
+                <li>Upcoming game releases</li>
+                <li>Latest gaming updates</li>
+                <li>Popular game reviews</li>
+                <li>Competitive esports events</li>
+            </ul>
+        </section>
+
+        <section class="content-section" id="contact">
+            <h2>Contact GamePulse</h2>
+            <p>Have a gaming topic or question you'd like us to cover?</p>
+            <p>Email us at <a href="mailto:gamepulse@example.com">gamepulse@example.com</a>.</p>
         </section>
 
     </main>
 
-    <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <h2>GamePulse</h2>
         <p>Your Daily Gaming News Source</p>
         <p>&copy; 2026 GamePulse. All Rights Reserved.</p>

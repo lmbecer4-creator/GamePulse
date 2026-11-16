@@ -1,257 +1,325 @@
 
 /* =========================
-   GamePulse - Main Stylesheet
+   GAMEPULSE - MAIN STYLESHEET
    ========================= */
 
+/* General page settings */
 * {
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: #111111;
-    color: #F5F5F5;
+    color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
-/* Header */
+img,
+video {
+    max-width: 100%;
+}
 
+/* Header */
 header {
     background-color: #111111;
+    color: white;
     text-align: center;
-    padding: 35px 20px;
-    border-bottom: 3px solid #E50914;
+    padding: 20px;
+    border-bottom: 2px solid #e50914;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
-    letter-spacing: 2px;
-    color: #FFFFFF;
+    font-size: 2.2em;
 }
 
 header h1 span {
-    color: #E50914;
+    color: #e50914;
 }
 
 header p {
-    color: #CCCCCC;
-    font-size: 1.1em;
     margin: 5px 0 0;
+    color: #cccccc;
 }
 
 /* Navigation */
-
 nav {
     background-color: #242424;
-    padding: 15px;
     text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #e50914;
 }
 
 nav a {
-    color: #FFFFFF;
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 18px;
-    transition: color 0.3s;
+    margin: 0 12px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: #E50914;
+    color: #e50914;
 }
 
-/* Main Content */
-
+/* Main content */
 main {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 30px auto;
 }
 
-/* Hero Section */
-
-.hero {
-    background: linear-gradient(
-        90deg,
-        rgba(17,17,17,0.95),
-        rgba(100,0,10,0.65)
-    );
-    border: 1px solid #383838;
-    border-radius: 12px;
-    padding: 55px 45px;
-    margin-bottom: 60px;
+/* Hero sections */
+.hero,
+.page-hero {
+    background: linear-gradient(110deg, #171111, #4b0007);
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 35px;
+    margin-bottom: 35px;
 }
 
-.hero h2 {
-    font-size: 2.8em;
-    margin: 0 0 10px;
-    color: #FFFFFF;
+.hero h2,
+.page-hero h2 {
+    border-left: 4px solid #e50914;
+    padding-left: 12px;
 }
 
-.hero p {
-    color: #CCCCCC;
-    font-size: 1.15em;
-    max-width: 600px;
+.hero p,
+.page-hero p {
+    color: #dddddd;
 }
 
+/* Buttons */
+button,
+.button,
 .hero a {
     display: inline-block;
-    background-color: #E50914;
-    color: #FFFFFF;
-    padding: 12px 22px;
-    margin-top: 12px;
+    background-color: #e50914;
+    color: white;
+    padding: 12px 20px;
+    border: none;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
+button:hover,
+.button:hover,
 .hero a:hover {
-    background-color: #B00610;
+    background-color: #b80710;
 }
 
-/* Section Headings */
+/* Section headings */
+section {
+    margin-bottom: 30px;
+}
 
 section h2 {
-    font-size: 2em;
-    border-left: 5px solid #E50914;
-    padding-left: 14px;
-    margin-bottom: 10px;
+    border-left: 4px solid #e50914;
+    padding-left: 12px;
 }
 
-section > p {
-    color: #BBBBBB;
-}
-
-/* News Cards */
-
-.news-grid {
+/* Homepage card layout */
+.card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    margin-top: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
 }
 
-.news-card {
+/* News and review card layouts */
+.news-grid,
+.card-grid,
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+/* Card appearance */
+.news-card,
+.card,
+.review-card {
     background-color: #242424;
     border: 1px solid #383838;
-    border-radius: 9px;
+    border-radius: 8px;
     overflow: hidden;
-    transition: transform 0.3s, border-color 0.3s;
+    transition: transform 0.3s ease;
 }
 
-.news-card:hover {
+.news-card:hover,
+.card:hover,
+.review-card:hover {
     transform: translateY(-5px);
-    border-color: #E50914;
 }
 
-/* Card Images */
-
-.image-one,
-.image-two,
-.image-three {
+/* Card images */
+.card-image {
     height: 190px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* Homepage and review card images */
 .image-one {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.15)),
-        url("gaming-setup.jpg");
+    background-image: url("gaming-setup.jpg");
 }
 
 .image-two {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.15)),
-        url("reviews.jpg");
+    background-image: url("reviews.jpg");
 }
 
 .image-three {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.15)),
-        url("esports.jpg");
+    background-image: url("esports.jpg");
 }
 
-/* Card Text */
-
+/* Card content */
 .card-content {
-    padding: 20px;
+    padding: 15px;
 }
 
 .card-content h3 {
-    color: #FFFFFF;
-    margin-top: 0;
+    margin: 8px 0;
+    padding: 0;
 }
 
 .card-content p {
-    color: #BBBBBB;
+    padding: 0;
+    margin: 8px 0;
+    color: #cccccc;
 }
 
+.card-content a {
+    color: #ff333d;
+}
+
+.card-content a:hover {
+    color: white;
+}
+
+/* Category labels */
+.category,
 .card-label {
     display: inline-block;
-    background-color: #E50914;
-    color: #FFFFFF;
+    background-color: #e50914;
+    color: white;
     padding: 5px 10px;
-    border-radius: 4px;
     font-size: 0.8em;
     font-weight: bold;
 }
 
+/* Other card text */
+.news-card h3,
+.card h3,
+.review-card h3 {
+    padding: 0 15px;
+}
+
+.news-card p,
+.card p,
+.review-card p {
+    padding: 0 15px 15px;
+    color: #cccccc;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    background-color: #242424;
+}
+
+th {
+    background-color: #e50914;
+    color: white;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #444444;
+}
+
+tr:nth-child(even) {
+    background-color: #303030;
+}
+
+/* Video section */
+video {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 8px;
+    background-color: #000000;
+}
+
+/* Images inside content */
+.content-image {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Links */
+main a {
+    color: #ff333d;
+}
+
+main a:hover {
+    color: white;
+}
+
 /* Footer */
-
 footer {
-    background-color: #1B1B1B;
-    border-top: 2px solid #E50914;
-    color: #AAAAAA;
+    background-color: #242424;
+    color: #cccccc;
     text-align: center;
-    padding: 25px;
-    margin-top: 60px;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid #e50914;
 }
 
-/* Tablet Layout */
-
+/* Responsive layout */
 @media (max-width: 850px) {
-    .news-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .hero h2 {
-        font-size: 2.2em;
+    .card-container,
+    .news-grid,
+    .card-grid,
+    .reviews-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-
-/* Mobile Layout */
 
 @media (max-width: 600px) {
-    header h1 {
-        font-size: 2.2em;
+    main {
+        width: 94%;
+    }
+
+    .card-container,
+    .news-grid,
+    .card-grid,
+    .reviews-grid {
+        grid-template-columns: 1fr;
     }
 
     nav a {
         display: inline-block;
-        margin: 6px 10px;
+        margin: 5px 8px;
     }
 
-    main {
-        width: 92%;
-    }
-
-    .hero {
-        padding: 30px 22px;
-    }
-
-    .hero h2 {
-        font-size: 1.9em;
-    }
-
-    .news-grid {
-        grid-template-columns: 1fr;
+    .hero,
+    .page-hero {
+        padding: 20px;
     }
 }
